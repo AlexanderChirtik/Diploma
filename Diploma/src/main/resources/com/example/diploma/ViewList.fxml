@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-border-color: #FF8C00;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diploma.ControllerList">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="1200.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/александр/Desktop/ДИПЛОМ Geekbrains/ОСНОВНОЕ - ПРОЕКТ/Diploma/src/main/resources/com/example/diploma/Pictures/Main_background.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="1.0" prefHeight="200.0" prefWidth="1200.0" style="-fx-background-color: #87CEFA; -fx-border-color: #FF8C00; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="104.0" layoutY="67.0" text="Список созданных документов" textFill="#0d0d0d">
+               <font>
+                  <Font name="SimSun" size="37.0" />
+               </font>
+               <effect>
+                  <DisplacementMap>
+                     <mapData>
+                        <FloatMap />
+                     </mapData>
+                  </DisplacementMap>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="74.0" layoutY="260.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="202.0">
+        <columns>
+          <TableColumn fx:id="fieldID" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="fieldDate" prefWidth="75.0" text="Дата" />
+            <TableColumn fx:id="fieldName" prefWidth="75.0" text="Имя" />
+            <TableColumn fx:id="fieldGender" prefWidth="75.0" text="Пол" />
+            <TableColumn fx:id="fieldBirth" prefWidth="118.93325805664062" text="Дата рождения" />
+            <TableColumn fx:id="fieldCity" prefWidth="64.0" text="Город" />
+            <TableColumn fx:id="fieldStreet" prefWidth="77.066650390625" text="Улица" />
+            <TableColumn fx:id="fieldHoume" prefWidth="42.13336181640625" text="Дом" />
+            <TableColumn fx:id="fieldFlat" prefWidth="81.60003662109375" text="Квартира" />
+            <TableColumn fx:id="fieldPhone" prefWidth="154.1334228515625" text="Телефон" />
+            <TableColumn fx:id="fieldPassport" prefWidth="158.39990234375" text="Паспорт" />
+            <TableColumn fx:id="fieldInstitution" prefWidth="195.99993896484375" text="Учреждение" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

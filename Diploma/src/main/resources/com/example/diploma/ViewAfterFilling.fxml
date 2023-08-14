@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-border-color: #FF8C00;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.diploma.ControllerAfterFilling">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="1200.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="file:/C:/Users/александр/Desktop/ДИПЛОМ Geekbrains/ОСНОВНОЕ - ПРОЕКТ/Diploma/src/main/resources/com/example/diploma/Pictures/Main_background.png" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutY="1.0" prefHeight="200.0" prefWidth="1200.0" style="-fx-background-color: #87CEFA; -fx-border-color: #FF8C00; -fx-border-width: 2;">
+            <children>
+                <Label layoutX="182.0" layoutY="73.0" text="Документы созданы" textFill="#0d0d0d">
+                    <font>
+                        <Font name="SimSun" size="49.0" />
+                    </font>
+                    <effect>
+                        <DisplacementMap>
+                            <mapData>
+                                <FloatMap />
+                            </mapData>
+                        </DisplacementMap>
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+      <ImageView fitHeight="314.0" fitWidth="445.0" layoutX="449.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pictures/Good.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
